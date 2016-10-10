@@ -163,6 +163,7 @@ class SemiDenseTracking  :public Imagenes {
     cv::Mat image_rgb,image_to_track,image_gray,image_prev,image_keyframe;
     int image_n;
 
+    // 从vo_system赋值传人的四个参数
     cv::Mat *image_frame;
     int *cont_frames;
     double *stamps;
@@ -170,7 +171,7 @@ class SemiDenseTracking  :public Imagenes {
 
     int last_cont_frames;
 
-    cv::Mat distCoeffs,cameraMatrix;
+    cv::Mat distCoeffs,cameraMatrix; // 从参数文件data.yml中读入
     int distortion,reduction;
 
     double cx,cy,fx,fy;
