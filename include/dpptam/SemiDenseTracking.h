@@ -163,7 +163,7 @@ class SemiDenseTracking  :public Imagenes {
     cv::Mat image_rgb,image_to_track,image_gray,image_prev,image_keyframe;
     int image_n;
 
-    // 从vo_system赋值传人的四个参数
+    // 从vo_system赋值传入的四个参数
     cv::Mat *image_frame;
     int *cont_frames;
     double *stamps;
